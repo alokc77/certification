@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAW- Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+   
+  </head>
+
+  <body>
+    <div id="main-wrapper">
+     <!-- Sidebar Start -->
+     <div class="dlabnav sidebar">
+      <!-- Sidebar Header Start -->
+   <div class="nav-header">
+     <a href="#" class="brand-logo" title="logo">
+       <img class="logo-large" src="assets/images/logo.png" alt="S3WaaS Logo" />
+       <img class="logo-small" src="assets/images/emb.png" alt="S3WaaS Logo" />
+     </a>
+    
+     <div class="nav-control">
+       <div class="hamburger">
+         <span class="line"></span>
+         <span class="line"></span>
+         <span class="line"></span>
+       </div>
+     </div>
+   </div>
+   <!-- Sidebar Header end -->
+     <div class="dlabnav-scroll mm-active">
+       <ul class="metismenu mm-show nav-links" id="menu">
+         <li class="dropdown header-profile">
+           <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+               <img src="assets/images/user-icon.jpg"  alt="user">
+               <div class="header-info ms-3">
+                <span class="font-w600">User Name </span>
+                <small class="text-end font-w400">Super Admin</small>
+              </div>
+           </a>
+           <div class="dropdown-menu dropdown-menu-end">
+            <a href="javascript:void(0);" class="dropdown-item ai-icon">
+              <em class="fa fa-user text-primary" aria-hidden="true"></em><span class="ms-2">Profile </span>
+            </a>
+            <a href="javascript:void(0);" class="dropdown-item ai-icon">
+              <em class="fa fa-envelope text-success" aria-hidden="true"></em><span class="ms-2">Inbox </span>
+            </a>
+            <a href="javascript:void(0);" class="dropdown-item ai-icon">
+              <em class="fa fa-sign-out text-danger" aria-hidden="true"></em><span class="ms-2">Logout </span>
+            </a>
+          </div>
+         </li>
+         <li class="arrow active" title="Dashboard"><a class="ai-icon" href="dashboard.html" >
+             <em class='fa fa-dashboard' aria-hidden="true"></em>
+             <span class="nav-text">Dashboard</span>
+             </a>
+            
+         </li>
+         <li class="arrow" title="CMS"><a class="has-arrow ai-icon" href="javascript:void()">
+             <em class="fa fa-folder"  aria-hidden="true"></em>
+             <span class="nav-text">CMS</span>
+           </a>
+           <ul class="sub-menu" >
+             <li title="Sub Menu 1"><a href="javascript:void()">Sub Menu 1</a></li>
+             <li title="Sub Menu 2"><a href="javascript:void()">Sub Menu 2</a></li>
+           </ul>
+          </li>
+        
+         <li class="arrow" title="Form"><a class="has-arrow ai-icon" href="javascript:void()">
+           <em class="fa fa-wpforms" aria-hidden="true"></em>
+             <span class="nav-text">Forms</span>
+           </a>
+           <ul class="sub-menu" >
+             <li title="Sub Menu 1"><a href="javascript:void()">Sub Menu 1</a></li>
+             <li title="Sub Menu 2"><a href="javascript:void()">Sub Menu 2</a></li>
+           </ul>
+         </li>
+         <li class="arrow" title="Table"><a class="has-arrow ai-icon" href="javascript:void()" >
+             <em class='fa fa-table' aria-hidden="true"></em>
+             <span class="nav-text">Table</span>
+           </a>
+           <ul class="sub-menu">
+             <li title="Sub Menu 1"><a href="javascript:void()">Sub Menu 1</a></li>
+             <li title="Sub Menu 2"><a href="javascript:void()">Sub Menu 2</a></li>
+           </ul>
+         </li>
+         <li class="arrow" title="Pages"><a class="has-arrow ai-icon" href="javascript:void()">
+             <em class="fa fa-file" aria-hidden="true"></em>
+             <span class="nav-text">Pages</span>
+           </a>
+           <ul class="sub-menu" >
+             <li title="Sub Menu 1"><a href="javascript:void()">Sub Menu 1</a></li>
+             <li title="Sub Menu 2"><a href="javascript:void()">Sub Menu 2</a></li>
+           </ul>
+         </li>
+       </ul>
+       <div class="copyright bottom-logo">
+        <div class="bottom-brand-logo">
+         <a href="javascript:void()">
+           <img class="logo-large" src="assets/images/nic_logo.png" alt="National Informatics Centre ">
+           <img class="logo-small" src="assets/images/nic-1.png" alt="National Informatics Centre ">
+         </a>
+       </div>
+     </div>
+   </div>
+   </div>
+
+
+      <!-- Sidebar end -->
+
+      <!-- Content body start -->
+      <div class="content-body">
+          <div class="container-fluid">
+          <!-- Header start -->
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="header">
+                    <div class="header-content">
+                      <div class="navbar navbar-expand">
+                        <div class="collapse navbar-collapse justify-content-between">
+                          <div class="header-left">
+                            <h1 class="dashboard_bar">CAW- Application</h1>
+                          </div>
+                          <div class="navbar-nav header-right">
+                            <form method="POST" class="input-group search-area">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search here..."
+                              />
+                              <span class="input-group-text">
+                                <a href="javascript:void(0)" title="Search">
+                                  <em class="fa fa-search" aria-hidden="true"></em>
+                                </a>
+                              </span>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <!-- Header end -->
+              <div class="main-content">
+                      <div class="row">
+                      
+                        <div class="col-xl-12">
+                        
+                          <div class="page-titles">
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                              <li class="breadcrumb-item active">CAW- Application</li>
+                          </ol>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="content-box caw-application">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cm-content-box">
+                                      <div class="cm-content-body form excerpt border-0 pt-3">
+                                            <div class="card px-0 pt-4 pb-0 mt-3 mb-0">
+                                                        
+                                                        <div id="msform">
+                                                              <!-- progressbar -->
+                                                              <ul id="progressbar">
+                                                                  <li class="active" id="download_document"><a href="javascript:void(0);" title="Download Document"><strong>Download Document</strong> </a></li>
+                                                                  <li id="application_initiate"><a href="javascript:void(0);" title="Application Initiate"><strong>Application Initiate</strong></a></li>
+                                                                  <li id="chiecklist_submitted"><a href="javascript:void(0);" title="Checklist Submitted"><strong>Checklist Submitted</strong></a></li>
+                                                                  <li id="documents_uploaded"><a href="javascript:void(0);" title="Documents Uploaded"><strong>Documents Uploaded</strong></a></li>
+                                                                  <li id="application_submitted"><a href="javascript:void(0);" title="Application Submitted"><strong>Application Submitted</strong></a></li>
+                                                                  <li id="download_certificte"><a href="javascript:void(0);" title="Download Certificate"><strong>Download Certificate</strong></a></li>
+                                                                
+                                                              </ul>
+                                                              <!-- fieldsets -->
+                                                              <fieldset>
+                                                                  <div class="form-card">
+                                                                     <div class="row py-3 checklist-hide">
+                                                                            <div class="col-lg-12 col-sm-12">
+                                                                              <div class="content-box caw-application">
+                                                                                <div class="cm-content-box">
+                                                                                    <div class="content-title mt-2 p-0">
+                                                                                      <div class="cpa"><a href="#" class="guideline-checklist btn my-2 btn-colored " tabindex="0">GIGW Guidelines Checklist</a></div>
+                                                                                    </div>
+                                                                                    <div class="site-header py-2 p-0">
+                                                                                      <h2 class="heading-h2">Documents</h2>
+                                                                                    </div>
+                                                                                    <div class="caw-note p-0">
+                                                                                      <div class="alert alert-warning alert-dismissible fade show">
+                                                                                      <strong>Note : </strong> Application Form will be available to download after submission of Guidelines Checklist
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="row-padding p-0">
+                                                                                    <div class="row">
+                                                                                      <div class="col-xl-12">
+                                                                                        <div class="bordered-box mb-3">
+                                                                                          <span class="bordered-box-title">Sample WQM</span>
+                                                                                            <div class="bordered-box-content">
+                                                                                            <button class="btn btn-white">Sample WQM <em class="fa fa-download" aria-hidden="true"></em></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="col-xl-12">
+                                                                                        <div class="bordered-box mb-3">
+                                                                                          <span class="bordered-box-title">Certification Agreement</span>
+                                                                                            <div class="bordered-box-content">
+                                                                                            <button class="btn btn-white">Certification Agreement <em class="fa fa-download" aria-hidden="true"></em></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="col-xl-12">
+                                                                                        <div class="bordered-box mb-3">
+                                                                                          <span class="bordered-box-title">Security Policy</span>
+                                                                                            <div class="bordered-box-content">
+                                                                                            <button class="btn btn-white">Security Policy <em class="fa fa-download" aria-hidden="true"></em></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="mt-2 mb-2">
+                                                                                    <div class="cm-content-body form excerpt">
+                                                                                      <div class="pt-2">
+                                                                                        <div class="table-responsive">
+                                                                                          <table class="table table-responsive-sm mb-0">
+                                                                                            <thead>
+                                                                                              <tr>
+                                                                                                <th scope="col"><strong>Document Name</strong></th>
+                                                                                                <th scope="col"><strong>Upload</strong></th>
+                                                                                                <th scope="col" class="text-end"><strong>Status</strong></th>
+                                                                                              
+                                                                                              </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                            
+                                                                                              <tr>
+                                                                                                <td>Certification Agreement</td>
+                                                                                                <td><div class="file-wrapper">
+                                                                                                  <input   type="file" name="upload-img"   />
+                                                                                                  
+                                                                                                  </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">Yet to upload</td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                <td>Security Policy</td>
+                                                                                                <td><div class="file-wrapper">
+                                                                                                  <input id="security_policy" type="file" name="upload-img" accept="image/*" />
+                                                                                                  
+                                                                                                  </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">Yet to upload</td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                <td>Website Quality Manual</td>
+                                                                                                <td><div class="file-wrapper">
+                                                                                                  <input id="web_quality_manual" type="file" name="upload-img" accept="image/*" />
+                                                                                                  
+                                                                                                  </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">Yet to upload</td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                <td>Website Security Audit Certificate</td>
+                                                                                                <td><div class="file-wrapper">
+                                                                                                  <input id="web_security_audit_certificate" type="file" name="upload-img" accept="image/*" />
+                                                                                                  
+                                                                                                  </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">Yet to upload</td>
+                                                                                              </tr>
+                                                                                            </tbody>
+                                                                                          </table>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  <div class="row">
+                                                                                  <div class="col-md-12 mt-3 mb-2">
+                                                                                  <div class="bordered-box mb-2">
+                                                                                    <span class="bordered-box-title">GIGW Certification</span>
+                                                                                    <div class="bordered-box-content">
+                                                                                      <button class="btn btn-white">Application Form<em class="fa fa-download" aria-hidden="true"></em></button>
+                                                                                      </div>
+                                                                                </div>
+                                                                                </div>
+                                                                                </div>
+                                                                                <div class="pt-2 mt-3 mb-3">
+                                                                                  <div class="table-responsive">
+                                                                                    <table class="table table-responsive-sm mb-0">
+                                                                                      <thead>
+                                                                                        <tr>
+                                                                                          <th scope="col"><strong>Document Name</strong></th>
+                                                                                          <th scope="col"><strong>Upload</strong></th>
+                                                                                          <th scope="col" class="text-end"><strong>Status</strong></th>
+                                                                                        
+                                                                                        </tr>
+                                                                                      </thead>
+                                                                                      <tbody>
+                                                                                        <tr>
+                                                                                          <td>Application Form</td>
+                                                                                          <td><div class="file-wrapper">
+                                                                                            <input   type="file" name="upload-img" accept="image/*" />
+                                                                                            
+                                                                                            </div>
+                                                                                          </td>
+                                                                                          <td class="text-end">Yet to upload</td>
+                                                                                        </tr>
+                                                                                        
+                                                                                      </tbody>
+                                                                                    </table>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="row py-2 text-center">
+                                                                              <div class="col-xl-12">
+                                                                                <button type="button" class="btn  mb-2 btn-colored" data-bs-toggle="modal" data-bs-target="#save_draft">Save Draft</button>
+                                                                                <button type="button" class="btn  mb-2 btn-colored" data-bs-toggle="modal" data-bs-target="#submit_to_stqc">Submit To STQC</button>
+                                                                              </div>
+                                                                              </div>
+                                                                              
+                                                                              </div>
+                                                                              </div>
+                                                                            <div class="row py-3 checklist-show">
+                                                                                <div class="col-lg-12 col-sm-12">
+                                                                                  <div class="content-box caw-application">
+                                                                                    <div class="cm-content-box">
+                                                                                      <div class="col-md-12 mt-5 mb-2">
+                                                                                        <div class="bordered-box mb-2 select-filter">
+                                                                                          <div class="select-option">
+                                                                                            <select class="form-control checklist_value" id="current_version_checklist">
+                                                                                              <option value="notselected">Please Select A Version To Preview</option>
+                                                                                              <option  value="Current">Version : Current</option>
+                                                                                            </select>
+                                                                                          
+                                                                                        </div>
+                                                                                          <div class="bordered-box-content">
+                                                                                            <a href="caw-application.html"  class="btn btn-colored back-button" ><em class="fa fa-arrow-left" aria-hidden="true"></em> Back</a>
+                                                                                            </div>
+                                                                                      </div>
+                                                                                      </div>
+                                                                                        
+                                                                                        <div class="site-header p-0 mt-5">
+                                                                                          <h2 class="heading-h2">GIGW Guidelines</h2>
+                                                                                        </div>
+                                                                                    
+                                                                                    <div class="pt-2 mt-2 mb-3">
+                                                                                      <h3 class="heading-3 guideline-head">1. Quality Guidelines</h3>
+                                                                                      <div class="table-responsive mt-2">
+                                                                                        <table class="table table-responsive-sm mb-0 gigw-guide-table">
+                                                                                          
+                                                                                          <thead>
+                                                                                            <tr>
+                                                                                              <th scope="col"><strong>Sl No</strong></th>
+                                                                                              <th scope="col"><strong>GIGW Requirement / Checkpoint</strong></th>
+                                                                                              <th scope="col"><strong>Reference</strong></th>
+                                                                                              <th scope="col"><strong>Status</strong></th>
+                                                                                              <th scope="col"><strong>Compliant</strong></th>
+                                                                                              <th scope="col"><strong>Help</strong></th>
+                                                                                              <th scope="col"><strong>NC Image</strong></th>
+                                                                                              <th scope="col" class="text-end"><strong>Action</strong></th>
+                                                                                            </tr>
+                                                                                          </thead>
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td>1</td>
+                                                                                              <td>Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+                                                                                              <td>5.1.1</td>
+                                                                                              <td class="status-check"><a href="javascript:void(0);">Yes</a></td>
+                                                                                              <td class="status-info"><a href="javascript:void(0);"><em class="fa fa-info" aria-hidden="true" title="Not Applicable"></em></a></td>
+                                                                                              <td class="status-help"><a href="javascript:void(0);"><em class="fa fa-question-circle" aria-hidden="true" title="Help"></em></a></td>
+                                                                                              <td>0</td>
+                                                                                              <td class="text-end"><div class="update-action" data-bs-toggle="modal" data-bs-target="#checkpoint_status"><a href="javascript:void(0);"><em class="fa fa-pencil-square-o" aria-hidden="true" title="Update"></em></a></div> </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                              <td>2</td>
+                                                                                              <td>Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+                                                                                              <td>5.1.1</td>
+                                                                                              <td class="status-check"><a href="javascript:void(0);">Yes</a></td>
+                                                                                              <td class="status-info"><a href="javascript:void(0);"><em class="fa fa-info" aria-hidden="true" title="Not Applicable"></em></a></td>
+                                                                                              <td class="status-help"><a href="javascript:void(0);"><em class="fa fa-question-circle" aria-hidden="true" title="Help"></em></a></td>
+                                                                                              <td>0</td>
+                                                                                              <td class="text-end"><div class="update-action"  data-bs-toggle="modal" data-bs-target="#checkpoint_status"><a href="javascript:void(0);"><em class="fa fa-pencil-square-o" aria-hidden="true" title="Update"></em></a></div> </td>
+                                                                                            </tr>
+                                                                                            
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </div>
+                                                                                    </div>
+                                                    
+                                                                                    <div class="pt-2 mt-2 mb-3">
+                                                                                      <h3 class="heading-3 guideline-head">2. Accessibility Guidelines</h3>
+                                                                                      <div class="table-responsive mt-2">
+                                                                                        <table class="table table-responsive-sm mb-0 gigw-guide-table">
+                                                                                          
+                                                                                          <thead>
+                                                                                            <tr>
+                                                                                              <th scope="col"><strong>Sl No</strong></th>
+                                                                                              <th scope="col"><strong>GIGW Requirement / Checkpoint</strong></th>
+                                                                                              <th scope="col"><strong>Reference</strong></th>
+                                                                                              <th scope="col"><strong>Status</strong></th>
+                                                                                              <th scope="col"><strong>Compliant</strong></th>
+                                                                                              <th scope="col"><strong>Help</strong></th>
+                                                                                              <th scope="col"><strong>NC Image</strong></th>
+                                                                                              <th scope="col" class="text-end"><strong>Action</strong></th>
+                                                                                            </tr>
+                                                                                          </thead>
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td>1</td>
+                                                                                              <td>All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below:
+                                                                                                <ol>
+                                                                                                  <li>Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose (Refer to Success Criterion 4.1.2 for additional requirements for controls and content that accepts user input);</li>
+                                                                                                <li>Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content (Refer to Guideline 1.2 for additional requirements for media);</li>
+                                                                                                <li>Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content;</li>
+                                                                                                <li>Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content</li>
+                                                                                                <li>CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities; and</li>
+                                                                                                <li>Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.</li>
+                                                                                                </ol>
+                                                                                                
+                                                                                              </td>
+                                                                                              <td>5.2.1</td>
+                                                                                              <td class="status-check"><a href="javascript:void(0);">Yes</a></td>
+                                                                                              <td class="status-info"><a href="javascript:void(0);"><em class="fa fa-info" aria-hidden="true" title="Not Applicable"></em></a></td>
+                                                                                              <td class="status-help"><a href="javascript:void(0);"><em class="fa fa-question-circle" aria-hidden="true" title="Help"></em></a></td>
+                                                                                              <td>0</td>
+                                                                                              <td class="text-end"><div class="update-action"  data-bs-toggle="modal" data-bs-target="#checkpoint_status" ><a href="javascript:void(0);"><em class="fa fa-pencil-square-o" aria-hidden="true" title="Update"></em></a></div> </td>
+                                                                                            </tr>
+                                                                                            
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </div>
+                                                                                    </div>
+                                                    
+                                                    
+                                                                                    <div class="pt-2 mt-2 mb-3">
+                                                                                      <h3 class="heading-3 guideline-head">3. Security Guidelines</h3>
+                                                                                      <div class="table-responsive mt-2">
+                                                                                        <table class="table table-responsive-sm mb-0 gigw-guide-table">
+                                                                                          
+                                                                                          <thead>
+                                                                                            <tr>
+                                                                                              <th scope="col"><strong>Sl No</strong></th>
+                                                                                              <th scope="col"><strong>GIGW Requirement / Checkpoint</strong></th>
+                                                                                              <th scope="col"><strong>Reference</strong></th>
+                                                                                              <th scope="col"><strong>Status</strong></th>
+                                                                                              <th scope="col"><strong>Compliant</strong></th>
+                                                                                              <th scope="col"><strong>Help</strong></th>
+                                                                                              <th scope="col"><strong>NC Image</strong></th>
+                                                                                              <th scope="col" class="text-end"><strong>Action</strong></th>
+                                                                                            </tr>
+                                                                                          </thead>
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td>1</td>
+                                                                                              <td>Ensure that the website, web application, web portal or mobile app is Security Audited and an Audit Clearance certificate is issued by NIC, STQC or a CERT-In empanelled vendor before hosting in production environment.</td>
+                                                                                              <td>4.3.1</td>
+                                                                                              <td class="status-check"><a href="javascript:void(0);"> </a></td>
+                                                                                              <td class="status-info"><a href="javascript:void(0);"><em class="fa fa-info" aria-hidden="true" title="Not Applicable"></em></a></td>
+                                                                                              <td class="status-help"><a href="javascript:void(0);"><em class="fa fa-question-circle" aria-hidden="true" title="Help"></em></a></td>
+                                                                                              <td>0</td>
+                                                                                              <td class="text-end"  data-bs-toggle="modal" data-bs-target="#checkpoint_status"><div class="update-action" ><a href="javascript:void(0);"><em class="fa fa-pencil-square-o" aria-hidden="true" title="Update"></em></a></div> </td>
+                                                                                            </tr>
+                                                                                            
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="pt-2 mt-2 mb-3">
+                                                                                      <h3 class="heading-3 guideline-head">4. Lifecycle Management Guidelines</h3>
+                                                                                      <div class="table-responsive mt-2">
+                                                                                        <table class="table table-responsive-sm mb-0 gigw-guide-table">
+                                                                                          
+                                                                                          <thead>
+                                                                                            <tr>
+                                                                                              <th scope="col"><strong>Sl No</strong></th>
+                                                                                              <th scope="col"><strong>GIGW Requirement / Checkpoint</strong></th>
+                                                                                              <th scope="col" ><strong>Reference</strong></th>
+                                                                                              <th scope="col" ><strong>Status</strong></th>
+                                                                                              <th scope="col" ><strong>Compliant</strong></th>
+                                                                                              <th scope="col" ><strong>Help</strong></th>
+                                                                                              <th scope="col" ><strong>NC Image</strong></th>
+                                                                                              <th scope="col" class="text-end"><strong>Action</strong></th>
+                                                                                            </tr>
+                                                                                          </thead>
+                                                                                          <tbody>
+                                                                                            <tr>
+                                                                                              <td>1</td>
+                                                                                              <td>	The government organisation has nominated a WIM as defined in the guidelines.</td>
+                                                                                              <td>5.4.1</td>
+                                                                                              <td class="status-check"><a href="javascript:void(0);"> </a></td>
+                                                                                              <td class="status-info"><a href="javascript:void(0);"><em class="fa fa-info" aria-hidden="true" title="Not Applicable"></em></a></td>
+                                                                                              <td class="status-help"><a href="javascript:void(0);"><em class="fa fa-question-circle" aria-hidden="true" title="Help"></em></a></td>
+                                                                                              <td>0</td>
+                                                                                              <td class="text-end"  data-bs-toggle="modal" data-bs-target="#checkpoint_status"><div class="update-action" ><a href="javascript:void(0);"><em class="fa fa-pencil-square-o" aria-hidden="true" title="Update"></em></a></div> </td>
+                                                                                            </tr>
+                                                                                            
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 mt-3 mb-2">
+                                                                                        <div class="alert alert-secondary border-0 text-center">GIGW Requirement / Checkpoint Submitted For Review</div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  
+                                                                                </div>
+                                                                                
+                                                                              </div>
+                                                                            </div>
+                                                                         
+                                                                  </div> 
+                                                                  <input type="button" name="next" class="next action-button" value="Next" />
+                                                              </fieldset>
+                                                              <fieldset>
+                                                                  <div class="form-card">
+                                                                      <div class="row">
+                                                                          
+                                                                          <div class="col-5">
+                                                                              <h2 class="steps">Step 2 - 6</h2>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div> 
+                                                                  <input type="button" name="next" class="next action-button" value="Next" /> 
+                                                                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                              </fieldset>
+                                                              <fieldset>
+                                                                  <div class="form-card">
+                                                                      <div class="row">
+                                                                        
+                                                                          <div class="col-5">
+                                                                              <h2 class="steps">Step 3 - 6</h2>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div> 
+                                                                  <input type="button" name="next" class="next action-button" value="Next" /> 
+                                                                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                              </fieldset>
+                                                              <fieldset>
+                                                                  <div class="form-card">
+                                                                      <div class="row">
+                                                                        <div class="col-5">
+                                                                              <h2 class="steps">Step 4 - 6</h2>
+                                                                          </div>
+                                                                      </div> 
+                                                                  </div>
+                                                                  <input type="button" name="next" class="next action-button" value="Next" /> 
+                                                                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                              </fieldset>
+                                                              <fieldset>
+                                                                <div class="form-card">
+                                                                    <div class="row">
+                                                                      <div class="col-5">
+                                                                            <h2 class="steps">Step 5 - 6</h2>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                                <input type="button" name="next" class="next action-button" value="Next" /> 
+                                                                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                            </fieldset>
+                                                            <fieldset>
+                                                              <div class="form-card">
+                                                                  <div class="row">
+                                                                    <div class="col-5">
+                                                                          <h2 class="steps">Step 6- 6</h2>
+                                                                      </div>
+                                                                  </div> <br><br>
+                                                                  <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                                                  <div class="row justify-content-center">
+                                                                      <div class="col-3"> <img src="assets/images/check-mark.png" class="fit-image" alt="Successful"> </div>
+                                                                  </div> <br><br>
+                                                                  <div class="row justify-content-center">
+                                                                      <div class="col-7 text-center">
+                                                                          <h5 class="purple-text text-center">Successfully Download Certificate</h5>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </fieldset>
+                                                        </div>
+                                            </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+  <!-- modal -->
+
+  <div class="modal fade save-draft" id="save_draft">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+        <div class="text-center">
+              <img src="assets/images/success.png" alt="Draft Save Success">
+              <p class="h2"><strong>Draft Saved</strong></p>
+              <p>Your STQC Application Draft Saved</p>
+              <p><a href="#" class="btn btn-colored" data-bs-dismiss="modal">Ok</a></p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="submit_to_stqc">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <strong class="modal-title">Information</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+              <img src="assets/images/icon-caution.svg" alt="Submit to STQC">
+            <div class="py-2"> <p>Please Submit the GIGW Guidelines Checklist, and upload all the documents before submitting the application to STQC</p>                      
+            <p>
+              <a href="javascript:void(0);" class="btn btn-white" data-bs-dismiss="modal">Cancel</a>
+            </p>
+          </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade checkpoint-status" id="checkpoint_status">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <strong class="modal-title">Checkpoint Status</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body p-3">
+         <p>Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</p>                      
+              <form action="#" method="post" class="web-form mb-3">
+                
+                <div class="row">
+                 <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="checkpoint_status_select" class="form-label">Status :</label>
+                      <select class="form-control" id="checkpoint_status_select" name="checkpoint_status">
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option>NA</option>
+                      </select>
+                    
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="checkpoint_remark" class="form-label">Remark :</label>
+                     <textarea rows="5" class="form-control" id="checkpoint_remark" name="checkpoint_remark"></textarea>
+                    </div>
+                  </div>
+                  
+                
+                </div>
+    
+                </form>
+                  <div class="text-center">
+                    <a href="javascript:void(0);" class="btn btn-colored" data-bs-dismiss="modal">Update</a>
+                    <a href="javascript:void(0);" class="btn btn-white" data-bs-dismiss="modal">Cancel</a>
+                  </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade checklist-version" id="checklist_version">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <strong class="modal-title">GIGW General / Accessibility Guidelines CheckList Version</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body p-3">
+         <table class="table-bordered mb-3">
+          <thead>
+            <tr>
+              <th scope="col"><strong>Sl.No</strong></th>
+              <th scope="col"><strong>Type</strong></th>
+              <th scope="col"><strong>Name</strong></th>
+              <th scope="col"><strong>Reference</strong></th>
+              <th scope="col"><strong>Status</strong></th>
+              <th scope="col"><strong>Anomaly</strong></th>
+              <th scope="col"><strong>Remark</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Security</td>
+              <td>Website has the Security Policy, Privacy Policy and the Contingency Management Plan clearly defined policies and plans approved by the government organisation.</td>
+              <td>4.3.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Lifecycle Management</td>
+              <td>Website has the following clearly defined policies and plans approved by the WIM. 
+                <ol> 
+                  <li>Copyright Policy</li> <li>Content Contribution, Moderation and Approval (CMAP) policy</li> 
+                  <li>Content Archival (CAP) policy</li> <li>Content Review (CRP) policy</li> <li>Hyper linking Policy</li> 
+                  <li>Privacy Policy</li> <li>Terms & Conditions</li> <li>Website Monitoring Plan.</li> <li>Contingency Management Plan</li> 
+                  <li>Security Policy</li> 
+                </ol>
+              </td>
+              <td>5.4.3</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Quality</td>
+              <td>	Association to government is demonstrated by the use of emblem/logo in proper ratio and colour, prominently displayed on the homepage of the website or homescreen of the app.</td>
+              <td>5.1.1</td>
+              <td>YES</td>
+              <td>NA</td>
+              <td>Done</td>
+            </tr>
+          </tbody>
+         
+         </table>
+          <div class="text-center">
+           <a href="javascript:void(0);" class="btn btn-white" data-bs-dismiss="modal">Cancel</a>
+          </div>
+    
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+  </body>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+$("#current_version_checklist").on("change", function () {        
+    $modal = $('#checklist_version');
+    if($(this).val() === 'Current'){
+        $modal.modal('show');
+    }
+});
+</script>
+
+</html>

@@ -1,0 +1,113 @@
+.c-pointer {
+  cursor: pointer;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.ms-3 {
+  margin-left: 1rem !important;
+}
+
+.btn-colored{
+   border-color: #5bcfc5 !important;
+    background-color: #5bcfc5 !important;
+    color:#fff !important;
+    
+}
+.btn-colored:hover{
+  border-color: #3ebbb1 !important;
+   background-color: #3ebbb1 !important;
+   color:#fff !important;
+   
+}
+.btn-white{
+  border-color: #5bcfc5 !important;
+   background-color: #fff !important;
+   color:#333 !important;
+   
+}
+.btn-white:hover{
+  border-color: #5bcfc5 !important;
+  background-color: #5bcfc5 !important;
+  color:#fff !important;
+  
+}
+.btn{
+  padding: 0.638rem 1.3rem !important;
+  border-radius: 1rem !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  border: 1px solid #ddd;
+
+}
+.btn-green{
+  color: #fff!important;
+    background-color: #198754!important;
+    border-color: #198754!important;
+}
+.btn-green:hover{
+  color: #fff!important;
+  background-color: #157347!important;
+  border-color: #146c43!important;
+}
+.btn-red{
+  color: #fff!important;
+  background-color: #dc3545!important;
+  border-color: #dc3545!important;
+}
+.btn-red:hover{
+  color: #fff!important;
+    background-color: #bb2d3b!important;
+    border-color: #b02a37!important;
+}
+.heading-h2{
+  font-size: 2rem !important;
+  color: #000;
+}
+.heading-3{
+  font-size: 1.6rem !important;
+  color: #000;
+}
+.heading-4{
+  font-size: 1.4rem !important;
+  color: #000;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #0000cd;
+}
+
+::selection {
+  color: #fff;
+  background: #0000cd;
+}
+strong, h1, h2, h3 {
+  font-weight: bold !important;
+  font-style: normal important;
+ 
+}
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting:before{
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size:18px !important;
+
+}
+table.dataTable thead>tr>th.sorting:after{
+  content: "\f0d7" !important;
+}
+table.dataTable thead>tr>th.sorting:before{
+  content: "\f0d8" !important;
+}
+div.table-responsive>div.dataTables_wrapper>div.row {
+  margin: 15px 0 !important;
+}
+
+.action-btn-group{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.form-group{
+  margin-bottom: 15px !important;
+}
